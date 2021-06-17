@@ -15,7 +15,6 @@
     main
     {
         display: flex;
-        margin-bottom: 25%;
         margin-left: 12%;
         margin-top: 12%;
     }

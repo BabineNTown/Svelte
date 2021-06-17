@@ -1,27 +1,30 @@
-<script>
-    import { fly } from 'svelte/transition'
-    let y;
-</script>
+<main>
+    <h1>
+        Finally, connect Thunderbird to your Exchange email account at your office.
+    </h1>
 
-<svelte:window bind:scrollY={y}/>
+    <h2>
+        You love <a class="Thunderbird" href="https://www.thunderbird.net/fr/" target="_blank">Thunderbird</a>. Your company uses Exchange.
+        Owl is the little bird that lets the two talk to each other.
+    </h2>
+</main>
 
-{#if window}
-    <main transition:fly="{{delay: 250, duration: 300, x: 100, y: 500, opacity: 0.5, }}" >
-        <h1>
-            Finally, connect Thunderbird to your Exchange email account at your office.
-        </h1>
-
-        <h2>
-            You love <a class="Thunderbird" href="https://www.thunderbird.net/fr/" target="_blank">Thunderbird</a>. Your company uses Exchange.
-            Owl is the little bird that lets the two talk to each other.
-        </h2>
-    </main>
-{/if}
 
 <style>
     main
     {
         margin-top: 12%;
+        animation: fadein 3s;
+    }
+    @keyframes fadein {
+        from {
+            opacity:0;
+            transform: translateY(100px);
+        }
+        to {
+            opacity:1;
+            transform: translateY(0px);
+        }
     }
     h1
     {

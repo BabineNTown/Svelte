@@ -1,9 +1,9 @@
 <script>
-    let src = 'img/chouette.png';
+    let logo = '.chouette.png';
 </script>
 
 <main>
-    <img {src} alt="Logo">
+    <img src={logo} alt="Logo">
     <h1>Owl</h1>
 </main>
 
