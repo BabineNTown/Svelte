@@ -11,7 +11,7 @@
 	main
 	{
 		display: flex;
-        margin-left: 20%;
+        margin-left: 15%;
+        margin-right: 25%;
 	}
-
 </style>

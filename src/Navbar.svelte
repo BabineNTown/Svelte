@@ -1,15 +1,37 @@
 <script>
-	import Nav_link from './Nav_link.svelte';
+	import NavLink from './Nav_link.svelte';
 </script>
 
-<main>
-	<Nav_link/>	
-</main>
+	<NavLink>
+		<div class="lien">
+			About
+		</div>
+	</NavLink>
+	<NavLink>
+		<div class="lien">
+			Get it 
+		</div>
+	</NavLink>
+	<NavLink>
+		<div class="lien">
+			Testimonials
+		</div>
+	</NavLink>
+	<NavLink>
+		<div class="lien">
+			Purchase
+		</div>
+	</NavLink>
+	<NavLink>
+		<div class="lien">
+			Contact
+		</div>
+	</NavLink>
 
 <style>
-	main
-	{
-		margin-left: 20%;
-	}
-
+    .lien
+    {
+        padding: 20px;
+        font-size: 19px;
+    }
 </style>
